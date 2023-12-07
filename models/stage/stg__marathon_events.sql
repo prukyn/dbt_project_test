@@ -2,7 +2,7 @@ with
 
 import_marathon_events as (
     select *
-    from {{ source('raw', 'marathon_events') }}
+    from {{ source('raw', 'mockaroo') }}
 )
 
 , transform as (
