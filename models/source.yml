@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: marathon_events
+        description: "Table with fake marathons events"
+        columns:
+          - name: upload_timestamp
+          - name: event_name
+          - name: gender
+          - name: phone_number
+          - name: email
+          - name: age
+          - name: webinar_title
+          - name: registration_date
+          - name: name
+          - name: id
+            description: "The primary key for this table"
+            tests:
+              - unique
+              - not_null

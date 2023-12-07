@@ -1,0 +1,10 @@
+
+version: 2
+
+models:
+  - name: int__users
+    columns:
+      - name: app_user_id
+        tests:
+          - unique
+          - not_null
